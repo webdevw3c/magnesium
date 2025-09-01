@@ -1,0 +1,174 @@
+doctype html
+html
+	head
+		block head
+			meta(charset="utf-8")
+			meta(name="viewport" content="width=device-width, initial-scale=1")
+			meta(http-equiv="X-UA-Compatible" content="IE=edge")
+			title
+				| Проект о роли магния в организме человека
+			block styles
+				//- link(rel="preconnect" href="https://fonts.googleapis.com")
+				//- link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
+				//- link(rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400..600&family=Montserrat:wght@300..500&display=swap")
+				//- link(rel="stylesheet"  crossorigin="anonymous" referrerpolicy="no-referrer" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.css" integrity="sha512-pmAAV1X4Nh5jA9m+jcvwJXFQvCBi3T17aZ1KWkqXr7g/O2YMvO8rfaa5ETWDuBvRq6fbDjlw4jHL44jNTScaKg==")
+				//- link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" integrity="sha512-nMNlpuaDPrqlEls3IX/Q56H36qvBASwb3ipuo3MxeWbsQB1881ox0cRv7UPTgBlriqoynt35KjEwgGUeUXIPnw==" crossorigin="anonymous" referrerpolicy="no-referrer")
+				//- link(rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.2.0/dist/css/datepicker.min.css")
+				link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css")
+				link(href="https://vjs.zencdn.net/7.20.3/video-js.css" rel="stylesheet")
+				link(rel="stylesheet" href="style.css")
+			//- style.
+				[v-cloak]{display:none}
+			meta(property="og:type" content="website")
+			meta(property="og:url" content="https:///")
+			meta(property="og:title" content="")
+			meta(name="description" content="")
+			meta(property="og:description" content="")
+			meta(property="og:image" content="")
+
+			meta(name="format-detection" content="telephone=no")
+
+	block body
+		body(class=type)
+
+			.header
+				.container
+					a.logo(href="/")
+						img.ordi(src="./img/logo-ordi.svg")
+						i
+						img.course(src="./img/logo-course.svg")
+
+			block content
+
+			section.disclaimer
+				.container
+					img(src="./img/logo-course.svg")
+					.title
+						| МАТЕРИАЛ ДЛЯ СПЕЦИАЛИСТОВ ЗДРАВООХРАНЕНИЯ
+					.text
+						.left
+							| МАТЕРИАЛ ПРЕДНАЗНАЧЕН ДЛЯ ИНФОРМИРОВАНИЯ СПЕЦИАЛИСТОВ
+							|
+							br
+							|
+							| ЗДРАВООХРАНЕНИЯ О СВОЙСТВАХ ЛЕКАРСТВЕННОГО ПРЕПАРАТА И ЕГО
+							|
+							br
+							|
+							| ПРАВИЛЬНОМ ПРИМЕНЕНИИ. ПЕРЕД НАЗНАЧЕНИЕМ ОЗНАКОМЬТЕСЬ
+							|
+							br
+							|
+							| С ПОЛНОЙ
+							|
+							a.instruction(href="")
+								| ИНСТРУКЦИЕЙ
+							|
+							| ПО МЕДИЦИНСКОМУ ПРИМЕНЕНИЮ
+						.right
+							| ООО «Опелла Хелскеа», группа компаний Санофи
+							|
+							br
+							|
+							| Адрес: 125375, Москва, ул. Тверская, 22.
+							|
+							br
+							|
+							| Тел.:
+							|
+							a(href="tel:+74957211400")
+								| +7 (495) 721-14-00
+							|
+							br
+							|
+							| MAT-RU-2400378-1.0-03/2024 | Все права защищены.
+							|
+							br
+							|
+							| Реклама, ООО «ОПЕЛЛА ХЕЛСКЕА», ИНН 9710085580
+							|
+							br
+							|
+							| ERID: 2VfnxvVjvyn
+
+			.footer
+				.container
+					.line1
+						.logo(href="/")
+							img(src="./img/logo-ordi-big.svg")
+						.share_block
+							a.ok(href="https://ok.ru/ordinatorskaya.online" target="_blank")
+								img(src="./img/ico-ok.svg")
+							a.vk(href="https://vk.com/ordinatorskayaonline" target="_blank")
+								img(src="./img/ico-vk.svg")
+					.line2
+						.col.col1
+							a(href="https://ординаторская.онлайн/about/")
+								| ОБ ОРДИНАТОРСКОЙ.ОНЛАЙН
+							a(href="https://ординаторская.онлайн/education/about/")
+								| ОБ ОБРАЗОВАТЕЛЬНОЙ ОРГАНИЗАЦИИ
+							a(href="")
+								| СПРАВОЧНИК
+						.col.col2
+							a(href="https://ординаторская.онлайн/privacy-policy/")
+								| ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ
+							a(href="https://ординаторская.онлайн/terms-conditions/")
+								| ПОЛЬЗОВАТЕЛЬСКОЕ СОГЛАШЕНИЕ
+							a(href="https://ординаторская.онлайн/licence/")
+								| ЛИЦЕНЗИОННОЕ СОГЛАШЕНИЕ
+						.col.col3
+							a(href="https://ординаторская.онлайн/partners/")
+								| ПАРТНЁРЫ И СОТРУДНИЧЕСТВО
+							a(href="https://ординаторская.онлайн/contacts/")
+								| КОНТАКТЫ
+					.line3
+						.col.col1
+							img(src="./img/ico-18.svg")
+							| &copy; ООО «Брефи маркетинг», 2025.
+							|
+							br
+							|
+							| 119620 Москва,
+							|
+							br
+							|
+							| Солнцевский проспект, дом 12, помещение 185
+							|
+							br
+							|
+							| ИНН 7736671836 ОГРН 1147746195574
+							|
+							br
+							|
+							| Все права защищены.
+						.col.col2
+							| Сайт Ординаторская.онлайн предназначен исключительно для работников здравоохранения, имеющих высшее медицинское образование. Зарегистрировавшись на сайте, Вы подтверждаете, что являетесь работником здравоохранения с высшим медицинским образованием, что
+							|
+							br.desktop
+							|
+							| Вы ознакомились с текстом пользовательского соглашения и поняли его.
+							.divider
+							| Полное или частичное копирование любых материалов сайта возможно только с письменного разрешения ООО «Брефи маркетинг».
+							|
+							br.desktop
+							|
+							| Заявление о нарушении авторских и смежных прав может быть отправлено по адресу
+							|
+							a(href="mailto:info@ordinatorskaya.online")
+								| info@ordinatorskaya.online
+							| , а также в форме Обратной
+							|
+							br.desktop
+							|
+							| связи.
+							.divider
+							| Изображения задействованных моделей используются исключительно с целью иллюстрации и не свидетельствуют об одобрении ими
+							|
+							br.desktop
+							|
+							| деятельности или использовании ими продукции/услуги/торговой марки.
+
+			script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js")
+			script(src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js")
+			script(src="https://vjs.zencdn.net/7.20.3/video.min.js")
+			script(src="script.js")

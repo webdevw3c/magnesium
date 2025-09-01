@@ -1,0 +1,23 @@
+{
+  "name": "different_markup",
+  "version": "2.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "gulp watch",
+    "build": "gulp build",
+    "publish": "surge -p build/ -d disturbed-breakfast6.surge.sh"
+  },
+  "author": "FINALLY",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-notify": "^4.0.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-pug": "^5.0.0",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.49.9",
+    "gulp-sourcemaps": "^3.0.0"
+  }
+}

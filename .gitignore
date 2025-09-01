@@ -1,0 +1,26 @@
+# Project files
+.idea
+nbproject
+*.iml
+out
+gen
+package-lock.json
+node_modules
+public/pp447f
+application/config/database.php
+application/config/url.php
+npm-debug.log
+
+# Kohana template
+application/cache/*
+application/logs/*
+
+# Composer
+/vendor/
+composer.lock
+
+# Coverage reports
+/build/logs/
+
+/build/
+pombs976

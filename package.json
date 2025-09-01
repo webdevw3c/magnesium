@@ -1,0 +1,22 @@
+{
+  "name": "finally_markup",
+  "version": "1.0.0",
+  "description": "Finally markup",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "gulp build",
+    "watch": "gulp watch"
+  },
+  "author": "FINALLY",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^5.0.1",
+    "gulp-notify": "^5.0.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-pug": "^5.0.0",
+    "gulp-sass": "^6.0.1",
+    "gulp-sourcemaps": "^3.0.0",
+    "sass": "^1.91.0"
+  }
+}

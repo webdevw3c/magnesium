@@ -1,0 +1,424 @@
+extends layout.pug
+
+prepend body
+	- var type = 'landing'
+
+block content
+
+	section.main
+		.container
+
+			.block.banner
+				img.compass(src="./img/compass.gif")
+				.block_title
+					| Проект о роли магния
+					|
+					br
+					|
+					| в организме человека
+				.tags
+					a.item.item1(href="#videos")
+						| ВЕБИНАРЫ
+					a.item.item2(href="#records")
+						| ВИДЕО С ЭКСПЕРТАМИ
+					a.item.item3(href="#articles")
+						| ПУБЛИКАЦИИ
+					//- .item.item4
+						| ПРОФИЛАКТИКА ВЫГОРАНИЯ
+					//- .item.item5
+						| ЗАМЕТКИ С КОНФЕРЕНЦИЙ
+
+			.block.block1
+				.inner
+					.block_title
+						| Стресс и дефицит магния взаимосвязаны
+					.line2
+						| и могут усугублять друг друга
+						sup
+							| 1
+					.line3
+						| Каждый второй пациент
+						sup
+							| 2,3
+					.line4
+						.item
+							img(src="./img/b1-l4-1.png")
+							| Сталкивается
+							|
+							br
+							|
+							| со стрессом
+							sup
+								| 2
+						.item
+							img(src="./img/b1-l4-2.png")
+							| Имеет дефицит
+							|
+							br
+							|
+							| магния
+							sup
+								| 3
+					.line5
+						img(src="./img/b1-l5.png")
+						.title
+							| 420 мг/сутки
+							sup
+								| 4
+						| Физиологическая потребность
+						|
+						br.mobile
+						|
+						| в магнии для взрослых
+
+			.block.block2
+				.inner
+					.block_title
+						.item
+							img(src="./img/b2-l1-1.svg")
+							div
+								| Симптомы стресса
+								sup
+									| 8,9
+						.item.desktop
+							img(src="./img/b2-l1-2.svg")
+							div
+								| Симптомы дефицита магния
+								sup
+									| 5-9
+					.list
+						.item
+							| Постоянная раздражительность
+						.item
+							| Постоянная усталость
+						.item
+							| Нарушение сна
+						.item
+							| Трудности концентрации
+						.item
+							| Чувство усталости после пробуждения
+						.item
+							| Желание плакать из-за незначительных проблем
+						.item
+							| Отсутствие интереса к&nbsp;деятельности
+				.inner.mobile
+					.block_title
+						.item
+							img(src="./img/b2-l1-2.svg")
+							div
+								| Симптомы дефицита магния
+								sup
+									| 5-9
+					.list
+						.item
+							| Постоянная раздражительность
+						.item
+							| Постоянная усталость
+						.item
+							| Нарушение сна
+						.item
+							| Трудности концентрации
+						.item
+							| Чувство усталости после пробуждения
+						.item
+							| Желание плакать из-за незначительных проблем
+						.item
+							| Отсутствие интереса к&nbsp;деятельности
+				a.button(href="")
+					| Перейти к статье
+
+			.block.block3
+				.inner
+					.block_title
+						img(src="./img/b3-l1.svg")
+						| Станьте экспертом в&nbsp;проблеме борьбы с&nbsp;дефицитом магния
+					.block_title
+						img(src="./img/b3-l2.svg")
+						| Cоберите все Кристаллы Спокойствия
+					.line3
+						.left
+							.title
+								| Дефицит магния не всегда
+								|
+								br
+								|
+								| можно выявить
+							| с помощью обычных лабораторных
+							|
+							br
+							|
+							| исследований
+							sup
+								| 1
+						.right
+							img(src="./img/b3-l3.svg")
+							.title
+								| Только 1%
+							div
+								| находится во внеклеточном
+								|
+								br
+								|
+								| пространстве (кровь,
+								|
+								br
+								|
+								| межклеточная жидкость)
+								sup
+									| 1
+					.line4
+						img(src="./img/b3-l4.png")
+						.left
+							b
+								| Первый Кристалл Спокойствия —
+							|
+							br.desktop
+							|
+							| 
+							| опросник для скрининга дефицита магния
+							|
+							br
+							|
+							| на вашем приеме
+						a.button(href="Опросник.pdf")
+							| Скачать опросник
+
+			.block.block4
+				.inner
+					.block_title
+						| ОПУБЛИКОВАНА РЕЗОЛЮЦИЯ
+						|
+						br
+						|
+						| СОВЕТА ЭКСПЕРТОВ ПО ДЕФИЦИТУ
+						|
+						br
+						|
+						| МАГНИЯ
+					.text
+						| Эксперты выразили консолидированное мнение о&nbsp;необходимости разработать российские клинические рекомендации по&nbsp;диагностике, лечению и&nbsp;профилактике дефицита магния
+					a.button(href="Резолюция проекта КР.pdf")
+						| Текст резолюции
+
+			.block.with_list.articles#articles
+				.block_title
+					| Статьи на&nbsp;портале
+				.list
+					a.item
+						img(src="./img/article-1.png")
+						.title
+							| Магний, его дефицит и стресс&nbsp;— разбираемся во взаимосвязях
+					a.item
+						img(src="./img/article-2.png")
+						.title
+							| Гипомагниемия: Лабораторная диагностика и&nbsp;скрининговые методы, вопросы референсных значений
+					a.item
+						img(src="./img/article-3.png")
+						.title
+							| Суточная потребность в&nbsp;магнии у&nbsp;беременных
+					a.item
+						img(src="./img/article-4.png")
+						.title
+							| Роль магния в&nbsp;физиологическом течении беременности
+
+			//- .block.with_list.videos
+				.block_title
+					| Видео с&nbsp;экспертом
+				.list
+					a.item
+						img(src="./img/video-1.png")
+						.title
+							| Аспекты эффективной прегравидарной подготовки, как залога успешного наступления и&nbsp;течения беременности
+					a.item
+						img(src="./img/video-2.png")
+						.title
+							| Восполнение дефицита магния у&nbsp;беременных: излишество или необходимость?
+					a.item
+						img(src="./img/video-3.png")
+						.title
+							| Тревога как проявление стресса у&nbsp;беременных пациенток в&nbsp;разрезе дефицита магния
+						.hint
+							| Орлова Светлана Владимировна д. м. н., профессор
+					a.item
+						img(src="./img/video-4.png")
+						.video
+							| Дефицит магния в&nbsp;рекомендациях экспертов и&nbsp;клинических рекомендациях
+						.hint
+							| Орлова Светлана Владимировна д. м. н., профессор
+
+			//- .block.with_list.videos.records
+				.block_title
+					| Записи вебинаров
+				.list
+					a.item
+						img(src="./img/record-1.png")
+						.title
+							| Риски при беременности на&nbsp;фоне дефицита магния
+					a.item
+						img(src="./img/record-2.png")
+						.title
+							| Прегравидарная подготовка&nbsp;— фокус на&nbsp;препаратах магния
+					a.item
+						img(src="./img/record-3.png")
+						.title
+							| Дефицит магния и&nbsp;тревожный тип беременной неосязаемая связь
+						.hint
+							| Баранов Игорь Иванович
+					a.item
+						img(src="./img/record-4.png")
+						.video
+							| Е 61.2 — гипомагниемия. Место в&nbsp;методических руководствах и&nbsp;клинических рекомендациях
+						.hint
+							| Баранов Игорь Иванович
+
+			.block.slider.videos#videos
+				.block_title
+					| Видео с&nbsp;экспертом
+				.list
+					div
+						.item
+							video.video-js#my-video(controls preload="auto" data-setup='{ "poster": "./img/video-1.png"}')
+								source(src="./(пед) Сотников Препараты магния лекарственные формы, доступные для применения у детей ё.mp4.mp4" type="video/mp4")
+								p.vjs-no-js
+									| Для просмотра видео включите поддержку JavaScript и убедитесь что ваш браузер
+									|
+									a(href="https://videojs.com/html5-video-support/" target="_blank")
+										| поддерживает HTML5 video
+							.title
+								| Аспекты эффективной прегравидарной подготовки, как залога успешного наступления и&nbsp;течения беременности
+					div
+						.item
+							video.video-js#my-video(controls preload="auto" data-setup='{ "poster": "./img/video-2.png"}')
+								source(src="./(пед) Сотников Препараты магния лекарственные формы, доступные для применения у детей ё.mp4.mp4" type="video/mp4")
+								p.vjs-no-js
+									| Для просмотра видео включите поддержку JavaScript и убедитесь что ваш браузер
+									|
+									a(href="https://videojs.com/html5-video-support/" target="_blank")
+										| поддерживает HTML5 video
+							.title
+								| Восполнение дефицита магния у&nbsp;беременных: излишество или необходимость?
+					div
+						.item
+							video.video-js#my-video(controls preload="auto" data-setup='{ "poster": "./img/video-3.png"}')
+								source(src="./(пед) Сотников Препараты магния лекарственные формы, доступные для применения у детей ё.mp4.mp4" type="video/mp4")
+								p.vjs-no-js
+									| Для просмотра видео включите поддержку JavaScript и убедитесь что ваш браузер
+									|
+									a(href="https://videojs.com/html5-video-support/" target="_blank")
+										| поддерживает HTML5 video
+							.title
+								| Тревога как проявление стресса у&nbsp;беременных пациенток в&nbsp;разрезе дефицита магния
+							.hint
+								| Орлова Светлана Владимировна д. м. н., профессор
+					div
+						.item
+							video.video-js#my-video(controls preload="auto" data-setup='{ "poster": "./img/video-4.png"}')
+								source(src="./(пед) Сотников Препараты магния лекарственные формы, доступные для применения у детей ё.mp4.mp4" type="video/mp4")
+								p.vjs-no-js
+									| Для просмотра видео включите поддержку JavaScript и убедитесь что ваш браузер
+									|
+									a(href="https://videojs.com/html5-video-support/" target="_blank")
+										| поддерживает HTML5 video
+							.title
+								| Дефицит магния в&nbsp;рекомендациях экспертов и&nbsp;клинических рекомендациях
+							.hint
+								| Орлова Светлана Владимировна д. м. н., профессор
+
+			.block.slider.videos.records#records
+				.block_title
+					| Записи вебинаров
+				.list
+					div
+						.item
+							video.video-js#my-video(controls preload="auto" data-setup='{ "poster": "./img/record-1.png"}')
+								source(src="./(пед) Сотников Препараты магния лекарственные формы, доступные для применения у детей ё.mp4.mp4" type="video/mp4")
+								p.vjs-no-js
+									| Для просмотра видео включите поддержку JavaScript и убедитесь что ваш браузер
+									|
+									a(href="https://videojs.com/html5-video-support/" target="_blank")
+										| поддерживает HTML5 video
+							.title
+								| Риски при беременности на&nbsp;фоне дефицита магния
+					div
+						.item
+							video.video-js#my-video(controls preload="auto" data-setup='{ "poster": "./img/record-1.png"}')
+								source(src="./(пед) Сотников Препараты магния лекарственные формы, доступные для применения у детей ё.mp4.mp4" type="video/mp4")
+								p.vjs-no-js
+									| Для просмотра видео включите поддержку JavaScript и убедитесь что ваш браузер
+									|
+									a(href="https://videojs.com/html5-video-support/" target="_blank")
+										| поддерживает HTML5 video
+							.title
+								| Прегравидарная подготовка&nbsp;— фокус на&nbsp;препаратах магния
+					div
+						.item
+							video.video-js#my-video(controls preload="auto" data-setup='{ "poster": "./img/record-1.png"}')
+								source(src="./(пед) Сотников Препараты магния лекарственные формы, доступные для применения у детей ё.mp4.mp4" type="video/mp4")
+								p.vjs-no-js
+									| Для просмотра видео включите поддержку JavaScript и убедитесь что ваш браузер
+									|
+									a(href="https://videojs.com/html5-video-support/" target="_blank")
+										| поддерживает HTML5 video
+							.title
+								| Дефицит магния и&nbsp;тревожный тип беременной неосязаемая связь
+							.hint
+								| Баранов Игорь Иванович
+					div
+						.item
+							video.video-js#my-video(controls preload="auto" data-setup='{ "poster": "./img/record-1.png"}')
+								source(src="./(пед) Сотников Препараты магния лекарственные формы, доступные для применения у детей ё.mp4.mp4" type="video/mp4")
+								p.vjs-no-js
+									| Для просмотра видео включите поддержку JavaScript и убедитесь что ваш браузер
+									|
+									a(href="https://videojs.com/html5-video-support/" target="_blank")
+										| поддерживает HTML5 video
+							.title
+								| Е 61.2 — гипомагниемия. Место в&nbsp;методических руководствах и&nbsp;клинических рекомендациях
+							.hint
+								| Баранов Игорь Иванович
+
+			.block.rate
+				.inner
+					.block_title
+						| ОЦЕНИТЕ НАШ КОНТЕНТ
+					.list
+						.item(data-rate="1")
+							img(src="./img/rate-1.png")
+						.item(data-rate="2")
+							img(src="./img/rate-2.png")
+						.item(data-rate="3")
+							img(src="./img/rate-3.png")
+						.item(data-rate="4")
+							img(src="./img/rate-4.png")
+						.item(data-rate="5")
+							img(src="./img/rate-5.png")
+
+			.block.magne_b6
+				.left
+					img(src="./img/b7-1.png")
+				.right
+					img(src="./img/magne-b6.gif")
+
+			.block.links
+				.container
+					.list
+						.item
+							| Тарасов Е.А., Блинов Д.В., Зимовина У.В., Сандакова Е.А. Дефицит магния и стресс: вопросы взаимосвязи, тесты для диагностики и подходы к терапии. Терапевтический архив. 2015;87(9):114‑122
+						.item
+							| ВЦИОМ. Стресс как неотъемлемая часть постиндустриальной эпохи
+						.item
+							| Catalano A, Bellone F, Chilà D, Loddo S, Morabito N, Basile G, Benvenga S, Corica F. Rates of hypomagnesemia and hypermagnesemia in medical settings. Magnes Res. 2021 Feb 1;34(1):1-8.
+						.item
+							| Методические рекомендации MP 2.3.1.0253-21 "Нормы физиологических потребностей в энергии и пищевых веществах для различных групп населения Российской Федерации" (утв. Федеральной службой по надзору в сфере защиты прав потребителей и благополучия человека 22 июля 2021 г.)
+						.item
+							| Общая характеристика лекарственного препарата Магне В6®, таблетки, покрытые оболочкой, рег. уд. ЛП-№(002046)-(РГ-RU)
+						.item
+							| Общая характеристика лекарственного препарата Магне В6® форте, таблетки, покрытые пленочной оболочкой, рег. уд. ЛП-№(002077)-(РГ-RU)
+						.item
+							| Общая характеристика лекарственного препарата Магне В6®, раствор для приема внутрь, ЛП-№(004011)-(РГ-RU)
+						.item
+							| Юматов Е.А., Взаимосвязь эмоционального стресса и сна
+						.item
+							| Акарачкова Е.С., Байдаулетова А.И. и др. Стресс: причины и последствия, лечение и профилактика. Клинические рекомендации
+						.item
+							| Etienne Pouteau, Marmar Kabir-Ahmadi, Lionel Noah et al.; Superiority of magnesium and vitamin B6 over magnesium alone on severe stress in healthy adults with low magnesemia: A randomized, single-blind clinical trial PLoS One. 2018 Dec 18;13(12):e0208454.

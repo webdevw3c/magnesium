@@ -1,0 +1,96 @@
+
+$transition-duration: 0.3s;
+
+// ----------------------------------------------
+// MIXINS
+
+// @mixin desktop_wide {
+//   @media (min-width: 1540px){
+//     @content;
+//   }
+// }
+@mixin desktop {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+@mixin mobile {
+  @media (max-width: 767px){
+    @content;
+  }
+}
+
+@mixin absolute100 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@mixin before_after {
+  content: "";
+  display: block;
+}
+
+@mixin square($size) {
+  height: $size;
+  width: $size;
+}
+
+@mixin round($size) {
+  border-radius: 50%;
+  @include square($size);
+}
+
+@mixin vertical {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+// ----------------------------------------------
+// INCLUDES
+
+@include mobile {
+  .desktop {
+    display: none!important;
+  }
+}
+
+@include desktop {
+  .mobile {
+    display: none!important;
+  }
+}
+
+// ----------------------------------------------
+// Reset
+
+* {
+  -webkit-tap-highlight-color: transparent;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+a, button, :focus, :hover, :active {
+  outline: none;
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+}
+
+html {
+  font-size: calc(100vw / 1440);
+  // scroll-behavior: smooth;
+  @include mobile {
+    font-size: 0.2564102564vw; // for 375px
+  }
+}

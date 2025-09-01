@@ -1,0 +1,588 @@
+@use '../common.scss' as *;
+
+$light-blue: #d7e9ff;
+$dark-blue: #001887;
+$light-purple: #afbeff;
+$base-blue: #CDE2FC;
+
+@font-face {
+  font-family: 'TildaSans';
+  font-style: normal;
+  font-weight: 250 1000;
+  src: url('./fonts/TildaSans-VF.woff2') format('woff2-variations'),
+       url('./fonts/TildaSans-VF.woff') format('woff-variations');     
+}
+@font-face {
+  font-family: 'TildaSans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./fonts/TildaSans-Regular.eot');
+  src: url('./fonts/TildaSans-Regular.eot?#iefix') format('embedded-opentype'),
+       url('./fonts/TildaSans-VF.woff2') format('woff2-variations'),
+       url('./fonts/TildaSans-VF.woff') format('woff-variations'),  
+       url('./fonts/TildaSans-Regular.woff2') format('woff2'),
+       url('./fonts/TildaSans-Regular.woff') format('woff');
+}
+@font-face {
+  font-family: 'TildaSans';
+  font-style: normal;
+  font-weight: 600;
+  src: url('./fonts/TildaSans-Semibold.eot');
+  src: url('./fonts/TildaSans-Semibold.eot?#iefix') format('embedded-opentype'),
+       url('./fonts/TildaSans-VF.woff2') format('woff2-variations'),
+       url('./fonts/TildaSans-VF.woff') format('woff-variations'),  
+       url('./fonts/TildaSans-Semibold.woff2') format('woff2'),
+       url('./fonts/TildaSans-Semibold.woff') format('woff');
+}
+@font-face {
+  font-family: 'TildaSans';
+  font-style: normal;
+  font-weight: 700;
+  src: url('./fonts/TildaSans-Bold.eot');
+  src: url('./fonts/TildaSans-Bold.eot?#iefix') format('embedded-opentype'),
+       url('./fonts/TildaSans-VF.woff2') format('woff2-variations'),
+       url('./fonts/TildaSans-VF.woff') format('woff-variations'),  
+       url('./fonts/TildaSans-Bold.woff2') format('woff2'),
+       url('./fonts/TildaSans-Bold.woff') format('woff');
+}
+
+@font-face {
+  font-family: "Circe";
+  font-style: normal;
+  font-display: auto;
+  font-weight: 400;
+  src: url("./fonts/Circe_Regular.eot?") format("eot"),
+       url("./fonts/Circe_Regular.woff2") format("woff2"),
+       url("./fonts/Circe_Regular.woff") format("woff"),
+       url("./fonts/Circe_Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Circe";
+  font-style: normal;
+  font-display: auto;
+  font-weight: 700;
+  src: url("./fonts/Circe_Bold.eot?") format("eot"),
+       url("./fonts/Circe_Bold.woff2") format("woff2"),
+       url("./fonts/Circe_Bold.woff") format("woff"),
+       url("./fonts/Circe_Bold.ttf") format("truetype");
+}
+
+// #################################################################
+
+html {
+  height: 100%;
+  font-size: calc(100vw / 1920);
+  @include mobile {
+    font-size: 0.27777777777777778vw; // for 360
+  }
+}
+
+body {
+  background-color: $light-blue;
+  font-family: 'TildaSans';
+  font-size: 20rem;
+  color: #000;
+  position: relative;
+  height: 100%;
+  @include mobile {
+
+  }
+}
+
+.button {
+  cursor: pointer;
+  background-color: $dark-blue;
+  color: #fff;
+  border-radius: 100rem;
+  height: 68rem;
+  line-height: 68rem;
+  padding: 0 40rem;
+  font-weight: 600;
+  display: inline-block;
+  text-align: center;
+  @include mobile {
+    width: 100%;
+  }
+  &:hover {
+    background-color: #aaa;
+  }
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1110rem;
+  position: relative;
+  @include mobile {
+    width: 336rem;
+  }
+}
+
+.block {
+  position: relative;
+  margin-top: 80rem;
+  .inner {
+    background-color: #fff;
+    border-radius: 24rem;
+    padding: 20rem;
+    @include mobile {
+      padding: 12rem;
+    }
+  }
+}
+
+.block_title {
+  font-size: 40rem;
+  font-weight: 700;
+  color: $dark-blue;
+  @include mobile {
+    font-size: 30rem;
+  }
+}
+
+sup {
+  font-size: 50%;
+  font-weight: 700;
+  @include mobile {
+    font-size: 60%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.header {
+  padding-top: 68rem;
+  @include mobile {
+    padding-top: 24rem;
+  }
+  .logo {
+    display: block;
+    display: flex;
+    align-items: center;
+    @include mobile {
+      // width: 330rem;
+      // margin-left: 0rem;
+      // margin-top: 4rem;
+      // position: relative;
+      // z-index: 200;
+    }
+    .ordi {
+      width: 49rem;
+      @include mobile {
+        width: 40rem;
+      }
+    }
+    i {
+      display: block;
+      width: 1rem;
+      height: 40rem;
+      background-color: $dark-blue;
+      margin: 0 20rem;
+    }
+    .course {
+      width: 195rem;
+      @include mobile {
+        width: 111rem;
+      }
+    }
+
+  }
+}
+
+.block {
+  &.links {
+    font-size: 14rem;
+    font-weight: 300;
+    margin-top: 75rem;
+    line-height: 1.22;
+    .list {
+      counter-reset: links;
+      .item {
+        display: flex;
+        &:before {
+          counter-increment: links;
+          content: counter(links) ".";
+          width: 18rem;
+          display: inline-block;
+          flex-shrink: 0;
+          margin-right: 4rem;
+          text-align: right;
+        }
+      }
+    }
+  }
+}
+
+section.disclaimer {
+  margin-top: 80rem;
+  padding-bottom: 40rem;
+  color: #656565;
+  .container {
+    padding-left: 360rem;
+    position: relative;
+    @include mobile {
+      padding-left: 0;
+    }
+  }
+  img {
+    width: 193rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+    @include mobile {
+      position: static;
+    }
+  }
+  .title {
+    font-weight: 100;
+    font-size: 30rem;
+    letter-spacing: -2rem;
+    @include mobile {
+      margin-top: 12rem;
+    }
+  }
+  .text {
+    margin-top: 20rem;
+    display: flex;
+    text-decoration-skip: flex;
+    justify-content: space-between;
+    font-size: 12rem;
+    @include mobile {
+      display: block;
+      .right {
+        margin-top: 20rem;
+      }
+    }
+    a {
+      color: #656565;
+      &.instruction {
+        color: $dark-blue;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer {
+  padding-top: 36rem;
+  padding-bottom: 24rem;
+  background-color: #fff;
+  font-size: 12rem;
+  border-top: #d1d1d1 3rem solid;
+  font-family: Circe, sans-serif;
+  @include mobile {
+    border-width: 2rem;
+    padding-bottom: 20rem;
+  }
+  .container {
+    @include mobile {
+      display: block;
+    }
+  }
+  .line1 {
+    display: flex;
+    justify-content: space-between;
+    .logo {
+      width: 222rem;
+      @include mobile {
+        width: 163rem;
+      }
+      img {
+        width: 100%;
+      }
+    }
+    .share_block {
+      display: flex;
+      gap: 10rem;
+      img {
+        width: 40rem;
+        @include mobile {
+          width: 36rem;
+        }
+      }
+    }
+  }
+  .line2 {
+    margin-top: 33rem;
+    display: flex;
+    @include mobile {
+      display: block;
+    }
+    a {
+      display: block;
+      color: #000;
+      margin-bottom: 9rem;
+      @include mobile {
+        margin-bottom: 12rem;
+      }
+    }
+  }
+  .line3 {
+    display: flex;
+    margin-top: 18rem;
+    @include mobile {
+      flex-direction: column-reverse;
+      margin-top: 24rem;
+    }
+    img {
+      display: block;
+      margin-bottom: 14rem;
+      width: 40rem;
+    }
+    .col {
+      &.col1 {
+        font-weight: 700;
+        @include mobile {
+          font-size: 11rem;
+          margin-bottom: 0;
+          display: flex;
+          justify-content: space-between;
+          flex-direction: row-reverse;
+        }
+      }
+      &.col2 {
+        width: auto;
+        font-size: 11rem;
+        color: #979797;
+        padding-top: 10rem;
+        line-height: 1.09;
+        @include mobile {
+          font-size: 10rem;
+          padding-top: 0;
+        }
+        .divider {
+          height: 10rem;
+          @include mobile {
+            height: 8rem;
+          }
+        }
+        a {
+          color: #979797;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+  .col {
+    &.col1 {
+      width: 330rem;
+      flex-shrink: 0;
+      @include mobile {
+        width: 100%;
+        margin-bottom: 30rem;
+      }
+    }
+    &.col2 {
+      width: 330rem;
+      @include mobile {
+        width: 100%;
+        margin-bottom: 22rem;
+      }
+    }
+  }
+}
+
+.anchor {
+  position: absolute;
+  top: -110rem;
+  @include mobile {
+    top: -60rem;
+  }
+}
+
+// .modal {
+//   background-color: rgba(0, 0, 0, 0.5);
+//   padding: 50rem;
+//   position: fixed;
+//   z-index: 9999;
+//   flex-direction: column;
+//   align-items: center;
+//   justify-content: center;
+//   display: none;
+//   height: 100%;
+//   overflow: auto;
+//   width: 100%;
+//   left: 0;
+//   top: 0;
+//   @include mobile {
+//     padding: 15rem;
+//   }
+//   .modal-container {
+//     background-color: #fff;
+//     padding: 60rem;
+//     position: relative;
+//     width: 1200rem;
+//     display: flex;
+//     flex-direction: column;
+//     color: #000;
+//     border-radius: 50rem;
+//     box-shadow: #0000004D 0 4rem 111rem 45rem;
+//     @include mobile {
+//       height: auto;
+//       width: 100%;
+//       padding: 30rem 16rem;
+//       border-radius: 30rem;
+//     }
+//     .close {
+//       position: absolute;
+//       top: 36rem;
+//       right: 36rem;
+//       cursor: pointer;
+//       @include mobile {
+//         top: 17rem;
+//         right: 17rem;
+//       }
+//       img {
+//         width: 50rem;
+//         @include mobile {
+//           width: 30rem;
+//         }
+//       }
+//     }
+//   }
+//   .title {
+//     font-size: 60rem;
+//     font-weight: 700;
+//     @include mobile {
+//       font-size: 40rem;
+//       line-height: 1;
+//       padding-right: 40rem;
+//     }
+//   }
+//   .blocks {
+//     display: flex;
+//     justify-content: space-between;
+//     flex-wrap: wrap;
+//     gap: 36rem 0;
+//     @include mobile {
+//       gap: 20rem 0;
+//     }
+//     .block {
+//       width: 678rem;
+//       display: flex;
+//       flex-direction: column;
+//       align-items: flex-start;
+//       &.task {
+//         width: 100%;
+//         margin-top: 16rem;
+//         @include mobile {
+//           margin-top: 12rem;
+//           order: 1;
+//         }
+//         .text {
+//           font-size: 20rem;
+//           margin-top: 14rem;
+//           @include mobile {
+//             font-size: 16rem;
+//             margin-top: 6rem;
+//           }
+//         }
+//       }
+//       &.prize {
+//         width: 400rem;
+//         @include mobile {
+//           width: 100%;
+//           order: 3;
+//         }
+//         .text {
+//           margin-bottom: 20rem;
+//           @include mobile {
+//              margin-bottom: 32rem;
+//           }
+//         }
+//       }
+//       &.measure {
+//         @include mobile {
+//           order: 2;
+//         }
+//       }
+//     }
+//   }
+//   .badge {
+//     background-color: $red;
+//     color: #fff;
+//     border-radius: 10rem;
+//     display: flex;
+//     align-items: center;
+//     height: 32rem;
+//     padding: 0 8rem;
+//     font-size: 20rem;
+//     font-weight: 500;
+//     position: relative;
+//     top: 2rem;
+//     @include mobile {
+//       font-size: 16rem;
+//       padding: 0 6rem;
+//     }
+//   }
+//   .text {
+//     margin-top: 7rem;
+//     font-size: 16rem;
+//     line-height: 1.2;
+//     font-weight: 500;
+//     max-width: 1050rem;
+//     .hash {
+//       font-size: 16rem;
+//       margin-top: 8rem;
+//       padding-left: 40rem;
+//       background: url(./img/ico-hash-black.svg) 0 2rem no-repeat;
+//       background-size: 32rem;
+//       @include mobile {
+//         font-size: 14rem;
+//       }
+//     }
+//   }
+//   .hint {
+//     margin-top: 11rem;
+//     font-size: 14rem;
+//     opacity: 0.4;
+//     max-width: 900rem;
+//     // @include mobile {
+//     //   margin-top: 8rem;
+//     // }
+//   }
+//   button {
+//     height: 60rem;
+//     width: 302rem;
+//     text-align: center;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     color: #fff;
+//     background-color: $button-black;
+//     border-radius: 60rem;
+//     font-size: 20rem;
+//     border: 0;
+//     font-weight: 400;
+//     margin-top: auto;
+//     @include mobile {
+//       width: 100%;
+//     }
+//   }
+// }
