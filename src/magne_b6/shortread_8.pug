@@ -1,0 +1,93 @@
+extends layout.pug
+
+prepend body
+	- var type = 'shortread_8'
+
+block content
+
+	section.pregnancy-header
+		.container
+			.pregnancy-header-inner
+				.block_title
+					| Магний и беременность
+				.description
+					| Важность магния для здоровья матери и развития плода
+
+				.mg-benefits
+					.left-content
+						.benefits-title
+							| Преимущества магния при беременности:
+						.benefits-list
+							.benefit-item
+								| Поддержка нормального развития плода
+							.benefit-item
+								| Снижение риска преэклампсии
+							.benefit-item
+								| Улучшение качества сна
+							.benefit-item
+								| Снижение мышечных судорог
+							.benefit-item
+								| Поддержка нервной системы
+					.right-content
+						img(src="./img/b4.png" alt="Беременная женщина")
+
+	section.pregnancy-symptoms
+		.container
+			.inner
+				.symptoms-section
+					.symptoms-title
+						| Симптомы дефицита магния при беременности
+					.symptoms-grid
+						.symptom-item
+							.icon-wrapper
+								.icon-circle
+									| 🤱
+							.symptom-text
+								| Мышечные судороги
+						.symptom-item
+							.icon-wrapper
+								.icon-circle
+									| 😴
+							.symptom-text
+								| Нарушения сна
+						.symptom-item
+							.icon-wrapper
+								.icon-circle
+									| 💓
+							.symptom-text
+								| Учащенное сердцебиение
+						.symptom-item
+							.icon-wrapper
+								.icon-circle
+									| 😣
+							.symptom-text
+								| Головные боли
+						.symptom-item
+							.icon-wrapper
+								.icon-circle
+									| 🤢
+							.symptom-text
+								| Тошнота и рвота
+						.symptom-item
+							.icon-wrapper
+								.icon-circle
+									| 😰
+							.symptom-text
+								| Повышенная тревожность
+
+				.stats-section
+					.stats-box
+						.stats-header
+							| Потребность в магнии увеличивается во время беременности
+						.stats-main
+							.big-number
+								| 350-400
+							.stats-text
+								| мг/сутки
+						.mg-elements
+							.mg-element
+								| Mg²⁺
+							.mg-element
+								| +
+							.mg-element
+								| B₆
