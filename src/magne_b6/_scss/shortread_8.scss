@@ -1,0 +1,72 @@
+@use '../../common.scss' as *;
+@use 'layout' as *;
+
+body.shortread_8 {
+  background-color: $bg-color;
+  
+  .pregnancy-header {
+    padding-top: 40rem;
+
+    .description {
+      margin-top: 24rem;
+    }
+
+    .mg-benefits {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 20rem;
+      padding: 0 20rem;
+      height: 334rem;
+      @extend %white-block;
+      overflow: hidden; // Предотвращаем выход контента за границы блока
+      
+      .left-content {
+        flex: 1;
+        max-width: 720rem;
+        padding: 36rem 0;
+        
+        .benefits-title {
+          font-size: 20rem;
+          font-weight: 600;
+          color: $dark-blue;
+          margin-bottom: 16rem;
+          @include mobile {
+            font-size: 18rem;
+          }
+        }
+        
+        .benefits-list {
+          .benefit-item {
+            font-size: 16rem;
+            line-height: 1.4;
+            margin-bottom: 8rem;
+            @include mobile {
+              font-size: 15rem;
+            }
+          }
+        }
+      }
+      
+      .right-content {
+        height: 100%;
+        overflow: hidden; // Скрываем части изображения, выходящие за границы
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0; // Предотвращаем сжатие контейнера
+        
+        img {
+          width: 300rem;
+          height: auto;
+          max-height: 100%; // Ограничиваем высоту изображения высотой контейнера
+          max-width: 100%; // Ограничиваем ширину изображения шириной контейнера
+          object-fit: contain; // Сохраняем пропорции и помещаем изображение внутри контейнера
+          @include mobile {
+            width: 200rem;
+          }
+        }
+      }
+    }
+  }
+}
