@@ -1,0 +1,25 @@
+// Shortread 8 specific styles
+
+.benefits {
+  &__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  &__item {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 12px;
+    
+    &::before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: #007bff; // You can change this color to match your design
+      font-weight: bold;
+      font-size: 16px;
+    }
+  }
+}
