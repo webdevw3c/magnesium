@@ -60,5 +60,69 @@ body.shortread_9 {
       margin: 40rem 0;
       font-weight: 700;
     }
+
+    &__statistics {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 208rem;
+      margin: 40rem 0;
+      @extend %white-block;
+      background: linear-gradient(180deg, #E8F4FF 0%, #B8DCFF 100%);
+    }
+
+    &__statistics-left {
+      max-width: 423rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      
+      img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+      }
+    }
+
+    &__statistics-right {
+      padding: 20rem;
+      flex: 1;
+      max-width: 620rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    &__statistics-content {
+      text-align: left;
+    }
+
+    &__statistics-text {
+      @extend %block-title;
+      font-size: 24rem;
+      line-height: 1.4;
+      margin-bottom: 20rem;
+      color: #1B365D;
+    }
+
+    &__statistics-number {
+      display: flex;
+      align-items: baseline;
+      gap: 8rem;
+    }
+
+    &__statistics-percent {
+      font-size: 72rem;
+      font-weight: 700;
+      color: #1B365D;
+      line-height: 1;
+    }
+
+    &__statistics-decimal {
+      font-size: 32rem;
+      font-weight: 400;
+      color: #1B365D;
+      line-height: 1;
+    }
   }
 }
