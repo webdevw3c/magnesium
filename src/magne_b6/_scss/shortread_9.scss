@@ -60,5 +60,45 @@ body.shortread_9 {
       margin: 40rem 0;
       font-weight: 700;
     }
+
+    &__statistics {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 211rem;
+      margin: 40rem 0;
+      gap: 40rem;
+    }
+
+    &__statistics-left {
+      max-width: 224rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 24rem;
+      background: linear-gradient(180deg, #ABCEF6 0%, #63A0E8 100%);
+      
+      img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+      }
+    }
+
+    &__statistics-right {
+      padding: 20rem;
+      flex: 1;
+      @extend %block-title;
+      @extend %white-block;
+    }
+
+    &__statistics-text {
+      font-size: 24rem;
+      margin-bottom: 12rem;
+    }
+
+    &__statistics-percent {
+      font-size: 60rem;
+    }
   }
 }
