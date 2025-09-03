@@ -1,0 +1,204 @@
+@use '../../common.scss' as *;
+
+$light-blue: #d7e9ff;
+$dark-blue: #001887;
+$light-purple: #afbeff;
+$base-blue: #CDE2FC;
+
+.populations {
+  padding: 60rem 0;
+  @include mobile {
+    padding: 40rem 0;
+  }
+
+  &__title {
+    font-size: 48rem;
+    font-weight: 700;
+    color: $dark-blue;
+    margin-bottom: 24rem;
+    @include mobile {
+      font-size: 32rem;
+      margin-bottom: 16rem;
+    }
+  }
+
+  &__subtitle {
+    font-size: 24rem;
+    font-weight: 600;
+    color: $dark-blue;
+    margin-bottom: 32rem;
+    @include mobile {
+      font-size: 18rem;
+      margin-bottom: 24rem;
+    }
+  }
+
+  &__discriptions {
+    font-size: 20rem;
+    line-height: 1.5;
+    margin-bottom: 32rem;
+    @include mobile {
+      font-size: 16rem;
+      margin-bottom: 24rem;
+    }
+  }
+
+  &__banner {
+    display: flex;
+    align-items: center;
+    background-color: $light-blue;
+    border-radius: 20rem;
+    padding: 40rem;
+    margin-bottom: 32rem;
+    @include mobile {
+      flex-direction: column;
+      padding: 24rem;
+      margin-bottom: 24rem;
+    }
+
+    &-left {
+      flex: 1;
+      margin-right: 40rem;
+      @include mobile {
+        margin-right: 0;
+        margin-bottom: 20rem;
+      }
+    }
+
+    &-text {
+      font-size: 20rem;
+      line-height: 1.5;
+      margin: 0;
+      @include mobile {
+        font-size: 16rem;
+      }
+    }
+
+    &-right {
+      flex-shrink: 0;
+      @include mobile {
+        width: 100%;
+        text-align: center;
+      }
+      
+      img {
+        max-width: 200rem;
+        height: auto;
+        @include mobile {
+          max-width: 150rem;
+        }
+      }
+    }
+  }
+
+  &__light-blue {
+    background-color: $light-blue;
+    border-radius: 20rem;
+    padding: 32rem;
+    margin-bottom: 32rem;
+    @include mobile {
+      padding: 24rem;
+      margin-bottom: 24rem;
+    }
+
+    &-text {
+      font-size: 20rem;
+      line-height: 1.5;
+      margin: 0;
+      @include mobile {
+        font-size: 16rem;
+      }
+    }
+  }
+
+  &__stats {
+    background: linear-gradient(135deg, #CDE2FC 0%, #AFBEFF 100%);
+    border-radius: 20rem;
+    padding: 0;
+    margin-bottom: 32rem;
+    overflow: hidden;
+    @include mobile {
+      margin-bottom: 24rem;
+    }
+
+    &-content {
+      display: flex;
+      align-items: center;
+      min-height: 200rem;
+      @include mobile {
+        flex-direction: column;
+        min-height: auto;
+      }
+    }
+
+    &-left {
+      flex-shrink: 0;
+      width: 280rem;
+      @include mobile {
+        width: 100%;
+        order: 2;
+        text-align: center;
+        padding: 20rem 0;
+      }
+      
+      img {
+        width: 100%;
+        height: auto;
+        display: block;
+        @include mobile {
+          max-width: 200rem;
+          margin: 0 auto;
+        }
+      }
+    }
+
+    &-right {
+      flex: 1;
+      padding: 40rem;
+      @include mobile {
+        padding: 24rem;
+        order: 1;
+      }
+    }
+
+    &-text {
+      font-size: 20rem;
+      line-height: 1.5;
+      color: $dark-blue;
+      margin-bottom: 24rem;
+      @include mobile {
+        font-size: 16rem;
+        margin-bottom: 20rem;
+      }
+    }
+
+    &-number {
+      display: flex;
+      align-items: baseline;
+      gap: 12rem;
+      @include mobile {
+        gap: 8rem;
+      }
+    }
+
+    &-main {
+      font-size: 72rem;
+      font-weight: 700;
+      color: $dark-blue;
+      line-height: 1;
+      @include mobile {
+        font-size: 48rem;
+      }
+    }
+
+    &-sub {
+      font-size: 36rem;
+      font-weight: 600;
+      color: $dark-blue;
+      line-height: 1;
+      @include mobile {
+        font-size: 24rem;
+      }
+    }
+  }
+}
