@@ -53,7 +53,7 @@ body.shortread_9 {
     }
 
     &__light-blue {
-      background: linear-gradient(180deg, #ABCEF6 0%, #63A0E8 100%);
+      background: linear-gradient(180deg, #abcef6 0%, #63a0e8 100%);
       color: #fff;
       border-radius: 24rem;
       padding: 20rem;
@@ -76,8 +76,8 @@ body.shortread_9 {
       align-items: center;
       justify-content: center;
       border-radius: 24rem;
-      background: linear-gradient(180deg, #ABCEF6 0%, #63A0E8 100%);
-      
+      background: linear-gradient(180deg, #abcef6 0%, #63a0e8 100%);
+
       img {
         max-width: 100%;
         max-height: 100%;
@@ -99,6 +99,57 @@ body.shortread_9 {
 
     &__statistics-percent {
       font-size: 60rem;
+    }
+
+    &__daily-need {
+      margin: 40rem 0;
+      background-color: $dark-blue;
+      color: #fff;
+      border-radius: 24rem;
+      height: 144rem;
+    }
+
+    &__daily-need-content {
+      position: relative;
+      display: flex;
+      padding: 20rem 0 20rem 100rem;
+      
+      img {
+        position: absolute;
+        left: -65rem;
+        top: 0;
+        width: 173rem;
+        height: 140rem;
+        object-fit: contain;
+      }
+    }
+
+    &__daily-need-text {
+      max-width: 450rem;
+    }
+
+    &__daily-need-title {
+      font-size: 20rem;
+      margin-bottom: 10rem;
+    }
+
+    &__daily-need-dosage {
+      font-size: 40rem;
+      font-weight: 700;
+    }
+
+    &__daily-need-note {
+      position: absolute;
+      right: -1rem;
+      top: -1rem;
+      @extend %white-block;
+      color: #000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 146rem;
+      width: 483rem;
+      padding: 20rem;
     }
   }
 }
