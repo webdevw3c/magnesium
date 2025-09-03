@@ -1,0 +1,228 @@
+@use "../../common.scss" as *;
+@use "layout" as *;
+
+body.shortread_8 {
+  background-color: $bg-color;
+
+  .pregnancy {
+    padding: 40rem 0;
+    &__title {
+      @extend %block-title;
+      font-size: 40rem;
+      margin-bottom: 24rem;
+    }
+  }
+
+  .benefits {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20rem;
+    padding: 0 20rem;
+    height: 334rem;
+    @extend %white-block;
+
+    &__left-content {
+      flex: 1;
+      max-width: 720rem;
+      padding: 36rem 0;
+    }
+
+    &__title {
+      font-size: 24rem;
+      font-weight: 700;
+      color: $dark-blue;
+      margin-bottom: 12rem;
+    }
+
+    &__list {
+      list-style: none;
+      margin-left: 30rem;
+    }
+
+    &__item {
+      position: relative;
+
+      &::before {
+        content: "•";
+        position: absolute;
+        left: -20rem;
+        color: #000;
+        font-weight: bold;
+      }
+    }
+
+    &__right-content {
+      height: 100%;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0; // Предотвращаем сжатие контейнера
+
+      img {
+        height: auto;
+        max-height: 100%;
+        max-width: 100%;
+        object-fit: contain;
+      }
+    }
+  }
+
+  .symptoms {
+    &__inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 40rem;
+      margin: 40rem 0;
+    }
+
+    &__left-content {
+      padding: 20rem;
+      width: 627rem;
+      height: 451rem;
+      @extend %white-block;
+    }
+
+    &__title {
+      font-size: 24rem;
+      font-weight: 700;
+      color: $dark-blue;
+      margin-bottom: 24rem;
+    }
+
+    &__list {
+      display: flex;
+      gap: 24rem;
+      flex-wrap: wrap;
+    }
+
+    &__item {
+      width: 200rem;
+      height: 140rem;
+      display: flex;
+      gap: 12rem;
+      flex-direction: column;
+
+      img {
+        width: 45rem;
+        height: 45rem;
+      }
+    }
+
+    &__right-content {
+      background: linear-gradient(180deg, #abcef6 0%, #63a0e8 100%);
+      width: 443rem;
+      height: 451rem;
+      color: #fff;
+      padding: 20rem;
+      border-radius: 24rem;
+
+      img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+      }
+    }
+
+    &__right-text {
+      font-size: 24rem;
+      font-weight: 700;
+    }
+
+    &__right-text-big {
+      font-size: 40rem;
+      font-weight: 700;
+    }
+
+    &__text {
+      margin-bottom: 12rem;
+    }
+  }
+
+  .advice {
+    margin: 40rem 0;
+
+    img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+      border-radius: 24rem;
+    }
+
+    &__blue {
+      background-color: $dark-blue;
+      color: #fff;
+      border-radius: 24rem;
+      padding: 20rem;
+      margin: 40rem 0;
+    }
+  }
+
+  .deficiency {
+    &__inner {
+      display: flex;
+      justify-content: space-between;
+      height: 362rem;
+      @extend %white-block;
+      margin: 40rem 0;
+    }
+
+    &__left-content {
+      width: 637rem;
+      padding: 20rem;
+      align-content: center;
+    }
+
+    &__title {
+      font-size: 30rem;
+      font-weight: 700;
+      color: $dark-blue;
+      margin-bottom: 12rem;
+    }
+
+    &__bold {
+      font-size: 20rem;
+      font-weight: 700;
+      margin-bottom: 12rem;
+    }
+
+    &__right-content {
+      display: flex;
+      align-items: flex-end;
+      height: 100%;
+      img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+      }
+    }
+  }
+
+  .organic {
+    margin: 40rem 0;
+    &__title {
+      @extend %block-title;
+      font-size: 40rem;
+      margin-bottom: 24rem;
+    }
+
+    &__content {
+      margin-bottom: 40rem;
+      img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+      }
+    }
+
+    &__blue {
+      background-color: $dark-blue;
+      color: #fff;
+      border-radius: 24rem;
+      padding: 20rem;
+      margin: 40rem 0;
+    }
+  }
+}
