@@ -1,0 +1,584 @@
+@use "../../common.scss" as *;
+@use "layout" as *;
+
+body.shortread_11 {
+  background-color: $bg-color;
+
+  .organism {
+    margin: 40rem 0;
+    &__title {
+      @extend %block-title;
+      font-size: 40rem;
+      margin-bottom: 24rem;
+
+      @include mobile {
+        font-size: 24rem;
+        margin-bottom: 12rem;
+      }
+    }
+
+    &__description {
+      margin-bottom: 40rem;
+      max-width: 1080rem;
+    }
+
+    &__content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 40rem;
+
+      @include mobile {
+        flex-direction: column;
+        gap: 24rem;
+      }
+    }
+
+    &__content-left {
+      flex: 1;
+    }
+
+    &__content-right {
+      @extend %white-block;
+      width: 680rem;
+      height: 176rem;
+      position: relative;
+
+      @include mobile {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    &__content-right-flex {
+      display: flex;
+      justify-content: end;
+      gap: 12rem;
+
+      @include mobile {
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 0;
+      }
+    }
+
+    &__content-right-img {
+      width: 424rem;
+      position: absolute;
+      bottom: 0;
+      left: -20rem;
+
+      img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+      }
+
+      @include mobile {
+        position: static;
+        width: 100%;
+      }
+    }
+
+    &__content-right-box {
+      max-width: 280rem;
+      text-align: center;
+      padding: 20rem;
+    }
+
+    &__content-box-text {
+      text-transform: uppercase;
+    }
+
+    &__content-box-img {
+      display: inline;
+    }
+
+    &__content-blue-text {
+      @extend %block-title;
+      text-transform: uppercase;
+    }
+  }
+
+  .deficit {
+    margin: 40rem 0;
+
+    @include mobile {
+      margin-top: 80rem;
+    }
+
+    &__title {
+      @extend %block-title;
+      font-size: 40rem;
+      margin-bottom: 40rem;
+
+      @include mobile {
+        font-size: 24rem;
+        margin-bottom: 24rem;
+      }
+    }
+
+    &__content {
+      @extend %white-block;
+      position: relative;
+    }
+
+    &__inner {
+      display: flex;
+      align-items: center;
+      position: relative;
+      height: 262rem;
+      padding: 20rem 20rem 20rem 380rem;
+
+      @include mobile {
+        flex-direction: column-reverse;
+        padding: 0;
+        height: auto;
+      }
+    }
+
+    &__left {
+      position: absolute;
+      bottom: -5rem;
+      left: 0;
+      width: 323rem;
+      object-fit: contain;
+
+      @include mobile {
+        position: relative;
+        bottom: -5rem;
+        width: 100%;
+      }
+    }
+
+    &__right {
+      display: flex;
+      flex-direction: column;
+      gap: 24rem;
+
+      @include mobile {
+        padding: 20rem 20rem 0 20rem;
+        gap: 20rem;
+      }
+    }
+
+    &__item {
+      display: flex;
+      gap: 30rem;
+
+      @include mobile {
+        flex-direction: column;
+        gap: 12rem;
+      }
+    }
+
+    &__item:last-child {
+      @include mobile {
+        flex-direction: column-reverse;
+      }
+    }
+
+    &__item-text {
+      max-width: 469rem;
+    }
+
+    &__item-percent {
+      @extend %block-title;
+      font-size: 40rem;
+    }
+  }
+
+  .factors {
+    margin: 40rem 0;
+    &__title {
+      @extend %block-title;
+      font-size: 40rem;
+      margin-bottom: 24rem;
+
+      @include mobile {
+        font-size: 24rem;
+        margin-bottom: 24rem;
+      }
+    }
+
+    &__description {
+      font-weight: 700;
+      margin-bottom: 24rem;
+
+      @include mobile {
+        font-size: 20rem;
+      }
+    }
+
+    &__list {
+      margin-bottom: 40rem;
+      margin-left: 30rem;
+      max-width: 1000rem;
+
+      @include mobile {
+        margin-bottom: 24rem;
+      }
+    }
+
+    &__content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 40rem;
+
+      @include mobile {
+        flex-direction: column;
+      }
+    }
+
+    &__content-left {
+      display: flex;
+      align-items: center;
+      gap: 20rem;
+      padding: 20rem;
+      @extend %white-block;
+      height: 211rem;
+      width: 555rem;
+
+      img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+      }
+
+      @include mobile {
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+      }
+    }
+
+    &__content-inner {
+      display: flex;
+      flex-direction: column;
+      gap: 12rem;
+    }
+
+    &__content-img {
+      max-width: 180rem;
+
+      @include mobile {
+        max-width: 300rem;
+      }
+    }
+
+    &__content-title {
+      @extend %block-title;
+    }
+
+    &__content-list {
+      list-style: none;
+      margin-left: 30rem;
+      position: relative;
+    }
+
+    &__content-item::before {
+      content: "•";
+      position: absolute;
+      left: -20rem;
+      color: #000;
+      font-weight: bold;
+    }
+
+    &__content-right {
+      flex: 1;
+      font-weight: 700;
+    }
+
+    &__blue {
+      @extend %blue-block;
+      padding: 20rem;
+      margin: 40rem 0;
+
+      @include mobile {
+        margin: 20rem 0;
+      }
+    }
+  }
+
+  .reasons {
+    margin: 40rem 0;
+
+    @include mobile {
+      margin: 80rem 0;
+    }
+    &__title {
+      @extend %block-title;
+      font-size: 40rem;
+      margin-bottom: 24rem;
+
+      @include mobile {
+        font-size: 24rem;
+        margin-bottom: 12rem;
+      }
+    }
+
+    &__description {
+      margin-bottom: 40rem;
+    }
+
+    &__content {
+      @extend %white-block;
+      height: 211rem;
+      font-size: 24rem;
+      display: flex;
+      align-items: center;
+      gap: 60rem;
+
+      @include mobile {
+        flex-direction: column;
+        height: auto;
+        gap: 24rem;
+        padding: 20rem;
+      }
+    }
+
+    &__left {
+      img {
+        width: 243rem;
+        object-fit: contain;
+      }
+    }
+  }
+
+  .cation {
+    margin: 40rem 0;
+
+    @include mobile {
+      margin: 80rem 0;
+    }
+
+    &__title {
+      @extend %block-title;
+      font-size: 40rem;
+      margin-bottom: 24rem;
+
+      @include mobile {
+        font-size: 30rem;
+        margin-bottom: 12rem;
+      }
+    }
+
+    &__description {
+      margin-bottom: 40rem;
+    }
+  }
+
+  .research {
+    margin: 40rem 0;
+    &__title {
+      @extend %block-title;
+      font-size: 40rem;
+      margin-bottom: 24rem;
+
+      @include mobile {
+        font-size: 30rem;
+        margin-bottom: 12rem;
+      }
+    }
+
+    &__description {
+      margin-bottom: 40rem;
+
+      @include mobile {
+        margin-bottom: 24rem;
+      }
+    }
+
+    &__subtitle {
+      @extend %block-title;
+      font-size: 24rem;
+      margin-bottom: 24rem;
+
+      @include mobile {
+        margin-bottom: 12rem;
+      }
+    }
+
+    &__group {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 40rem;
+
+      @include mobile {
+        flex-direction: column;
+        gap: 12rem;
+      }
+    }
+
+    &__group-left {
+      max-width: 430rem;
+      img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+      }
+    }
+
+    &__group-right {
+      max-width: 430rem;
+      img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+      }
+    }
+  }
+
+  .sulfate {
+    margin: 40rem 0;
+    &__title {
+      @extend %block-title;
+      font-size: 40rem;
+      margin-bottom: 24rem;
+
+      @include mobile {
+        font-size: 30rem;
+        margin-bottom: 12rem;
+      }
+    }
+
+    &__description {
+      margin-bottom: 24rem;
+      font-weight: 700;
+
+      @include mobile {
+        margin-bottom: 12rem;
+      }
+    }
+
+    &__text {
+      margin-bottom: 24rem;
+    }
+
+    &__block {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8rem;
+      @extend %white-block;
+
+      @include mobile {
+        flex-direction: column-reverse;
+      }
+    }
+
+    &__block-left {
+      max-width: 380rem;
+      img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+      }
+
+      @include mobile {
+        position: relative;
+        bottom: -5rem;
+      }
+    }
+
+    &__block-right {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 12rem;
+      padding: 20rem;
+    }
+
+    &__block-title {
+      @extend %block-title;
+      font-size: 30rem;
+
+      @include mobile {
+        font-size: 24rem;
+      }
+    }
+  }
+
+  .reatment {
+    margin-top: 40rem;
+    &__title {
+      @extend %block-title;
+      font-size: 40rem;
+      margin-bottom: 40rem;
+
+      @include mobile {
+        font-size: 30rem;
+        margin-bottom: 24rem;
+      }
+    }
+
+    &__text-block {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__text {
+      text-align: center;
+      margin-bottom: 24rem;
+      max-width: 900rem;
+    }
+
+    &__block {
+      width: 100%;
+      margin-bottom: 64rem;
+
+      img {
+        width: 100%;
+        object-fit: contain;
+        border-radius: 24rem;
+      }
+
+      @include mobile {
+        overflow-x: scroll;
+        padding-bottom: 24rem;
+
+        &::-webkit-scrollbar {
+          display: block;
+          height: 8rem;
+          -webkit-appearance: none;
+          border-radius: 6rem;
+        }
+
+        &::-webkit-scrollbar-track {
+          background: #fff;
+          border-radius: 6rem;
+        }
+
+        &::-webkit-scrollbar-thumb {
+          background: $dark-blue;
+          border-radius: 6rem;
+          border: none;
+          width: 80rem;
+          -webkit-box-shadow: none;
+        }
+
+        img {
+          width: 550rem;
+          min-width: 100%;
+        }
+      }
+    }
+
+    &__block-inner {
+      margin-bottom: 40rem;
+
+      @include mobile {
+        margin-bottom: 18rem;
+      }
+    }
+
+    &__block-inner:last-child {
+      @include mobile {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

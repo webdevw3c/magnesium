@@ -1,0 +1,182 @@
+extends layout.pug
+
+prepend body
+  - var type = 'shortread_10'
+
+block content
+
+  section.main
+    .container
+
+      .hypomagnesemia
+        .hypomagnesemia__header
+          h1.hypomagnesemia__title
+            | Гипомагниемия:
+          h2.hypomagnesemia__subtitle
+            | Лабораторная диагностика и скрининговые методы, вопросы референсных значений
+          .hypomagnesemia__stats
+            .hypomagnesemia__card
+              p.hypomagnesemia__card-text 
+                | Дефицит магния не является редкостью среди населения в целом.
+                sup 1
+                |  По данным российского многоцентрового исследования, распространённость дефицита магния составила <b>47,8%.</b>
+                sup <b>2</b>
+              img.hypomagnesemia__card-img(src="img/shortread_10/family.png", alt="Семья")
+
+            .hypomagnesemia__card
+              p.hypomagnesemia__card-text 
+                | Распространённость гипомагниемии среди беременных по данным двух масштабных многоцентровых исследований (MAGIC, MAGIC 2) достигает <b>81,2%.</b>
+                sup <b>3,4</b>
+              img.hypomagnesemia__card-img(src="img/shortread_10/pregnant.png", alt="Беременная женщина")
+
+        .hypomagnesemia__highlight
+          h3.hypomagnesemia__highlight-title
+            | Более того, уровень магния в сыворотке крови не всегда может отражать действительный уровень магния в организме.
+            sup 5
+          p.hypomagnesemia__highlight-text
+            | Это неудивительно, поскольку магний в кровообращении не представляет собой общее количество магния в организме, и составляет всего 1% или менее от общего его содержания.
+            sup 7
+            |  Также на изменения в сывороточной концентрации могут влиять потребление магния с пищей и уровень альбумина; могут демонстрировать свою роль и краткосрочные изменения, например, ежедневная и ежечасная изменчивость количества магния, всасываемого и выводимого через почки.
+            sup 6
+
+        .hypomagnesemia__diagnosis
+          h2.hypomagnesemia__diagnosis-title
+            | Лабораторная диагностика дефицита магния (ДМ)
+
+          .hypomagnesemia__diagnosis-info
+            .hypomagnesemia__diagnosis-info-left
+              p.hypomagnesemia__diagnosis-left-text
+                | Нормальная концентрация магния в плазме крови
+                sup 7
+                p.hypomagnesemia__diagnosis-unit > 0,80 ммоль/л
+          
+            .hypomagnesemia__diagnosis-info-right
+              p.hypomagnesemia__diagnosis-right-text
+                | Международный консенсусный уровень магния в сыворотке крови для определения гипомагниемии составляет 0,85 ммоль/л
+                sup 8
+            
+              .hypomagnesemia__diagnosis-levels
+                .hypomagnesemia__level
+                  span.hypomagnesemia__level-label Легкий ДМ
+                  span.hypomagnesemia__level-number 0,7-0,8
+                  span.hypomagnesemia__level-unit ммоль/л
+
+                .hypomagnesemia__level
+                  span.hypomagnesemia__level-label Умеренный ДМ
+                  span.hypomagnesemia__level-number 0,5-0,7
+                  span.hypomagnesemia__level-unit ммоль/л
+
+                .hypomagnesemia__level
+                  span.hypomagnesemia__level-label Тяжелый ДМ
+                  span.hypomagnesemia__level-number ниже 0,5
+                  span.hypomagnesemia__level-unit ммоль/л
+
+          .hypomagnesemia__diagnosis-blue 
+            img.hypomagnesemia__diagnosis-blue-img(src="img/shortread_10/blue.png", alt="Синий блок")
+            p.hypomagnesemia__diagnosis-blue-text
+              | Отождествление уровней магния в плазме с уровнями магния в сыворотке является диагностической ошибкой!
+              sup 9
+
+          .hypomagnesemia__diagnosis-plasma
+            .hypomagnesemia__diagnosis-plasma-inner
+              p.hypomagnesemia__diagnosis-plasma-text
+                | <b>Уровни магния в плазме, превышающие 2,07 мг/дл (0,85 ммоль/л) принято ассоциировать с системным адекватным уровнем магния.</b>
+                sup <b>10</b>
+              p.hypomagnesemia__diagnosis-plasma-text
+                | Уровни магния в форменных элементах крови (эритроцитах и ​​моноцитах) часто называют более предпочтительными для анализа по сравнению с уровнями в сыворотке или плазме из-за более высокого содержания магния в них (0,5% против 0,3% соответственно).
+                sup 8
+            img.hypomagnesemia__diagnosis-plasma-img(src="img/shortread_10/plasma.png", alt="Таблетка магния")
+
+          .hypomagnesemia__diagnosis-white 
+            img.hypomagnesemia__diagnosis-white-img(src="img/shortread_10/white.png", alt="Синий блок")
+            .hypomagnesemia__diagnosis-white-inner
+              p.hypomagnesemia__diagnosis-white-text
+                | Концентрация магния в эритроцитах <b>в три раза выше,</b> чем в плазме
+                sup 11
+              p.hypomagnesemia__diagnosis-text
+                | 1,65–2,65 ммоль/л для лиц 18 лет и старше
+                sup 11
+
+          p.hypomagnesemia__diagnosis-paragraph 
+            | Тем не менее, большинство исследований с использованием уровня магния в эритроцитах не удовлетворяют долгосрочному плану и не проводились в достаточном количестве рандомизированных клинических исследований, чтобы считаться достаточно надёжными.
+            sup 6
+
+          .hypomagnesemia__diagnosis-excretion
+            p.hypomagnesemia__diagnosis-excretion-big
+              | Экскреция магния с мочой < 80 мг/день
+            p.hypomagnesemia__diagnosis-excretion-text
+              | — может указывать на риск дефицита магния, поскольку в этом состоянии экскреция почками снижается как компенсаторный механизм
+              sup 12
+        
+      .antagonist
+        h2.antagonist__title
+          | Магний — естественный антагонист кальция
+        p.antagonist__text
+          | <b>Гипокальциемия</b> — классический симптом гипомагниемии. При этом симптоматическая гипокальциемия возникает уже при снижении концентрации магния в плазме на 0,5 ммоль/л. Пациенты с нормальной концентрацией магния могут иметь гипокальциемию вследствие дефицита внутриклеточного магния.
+          sup 13,14
+
+        .antagonist__blue
+          p.antagonist__unit
+            | > 0,4
+          .antagonist__blue-inner
+            p.antagonist__text
+            | Оптимальное соотношение магния и кальция в сыворотке крови
+            sup 15
+        
+        .antagonist__methods
+          .antagonist__left-block
+            p.antagonist__left-block-text
+              | В настоящее время оценка данных ЭКГ является важным диагностическим инструментом для контроля ДМ. Классическими признаками ДМ по ЭКГ являются расширение интервала QT, увеличение продолжительности комплекса QRS, депрессия сегмента ST, экстрасистолия и повышенная ЧСС.
+              sup 9
+            p.antagonist__left-block-text
+              | Так, константа уровня магния в крови может поддерживаться достаточно длительное время за счёт выхода иона из депо, и, несмотря на нормальный уровень магния в крови, дефицит его уже может проявляться.
+              sup 17
+            p.antagonist__left-block-text
+              | Поэтому эксперты рекомендуют обращать в первую очередь внимание на клинические проявления ДМ. В этой связи объективизация диагностики, например с использованием опросников, представляет большой практический интерес.
+              sup 2
+          .antagonist__right-block
+            h3.antagonist__right-block-title
+              | Инструментальные методы диагностики ДМ:
+            .antagonist__right-block-img
+                img.desktop(src="img/shortread_10/right-block.png", alt="Инструментальные методы диагностики ДМ")
+                img.mobile(src="img/shortread_10/right-block-mobile.png", alt="Инструментальные методы диагностики ДМ")
+        
+        .antagonist__blue
+          p.antagonist__blue-text
+            | С целью объективизации постановки диагноза дефицита магния существуют опросники, в частности, MDQ-2318, который был разработан на основе исследования SONOROUS
+
+        .antagonist__wisdom-list
+          .antagonist__wisdom-item
+            p.antagonist__wisdom-item-text
+              | Быстрая диагностика
+          .antagonist__wisdom-item
+            p.antagonist__wisdom-item-text
+              | Высокая чувствительность
+          .antagonist__wisdom-item
+            p.antagonist__wisdom-item-text
+              | Неинвазивный метод
+
+        .download
+          .download__img
+            img.desktop(src="img/shortread_10/download.png", alt="Скачать опросник")
+            img.mobile(src="img/shortread_10/download-mobile.png", alt="Скачать опросник")
+          .download__btn
+            a.download__btn-link(href="https://docsfera.ru/direction/magne/tests/test-magne/")
+              | Скачать
+            p.download__btn-text.desktop
+              | Нажмите кнопку или воспользуйтесь QR — кодом, <br> <b>чтобы скачать опросник MDQ-23</b>
+            p.download__btn-text.mobail
+              | <b>Скачайте опросник MDQ-23</b>
+
+        .antagonist__white
+          .antagonist__white-inner
+            h3.antagonist__white-title
+              | Диагностика ДМ
+            p.antagonist__white-text
+              | Включает анализ клинической картины ДМ и использование дополнительных методов диагностики — прежде всего, лабораторная диагностика уровней магния в крови.
+              sup 9
+          img.antagonist__white-img(src="img/shortread_10/antagonist-white.png", alt="Синий блок")
+        
+        p.antagonist__text
+          | Необходимо подчеркнуть, что нормальный уровень магния в организме нужен не только для поддержания стрессоустойчивости, полноценного развития плода, вынашивания ребёнка, но и для предотвращения патологических последствий дефицита магния во время беременности.
+          sup 2

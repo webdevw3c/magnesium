@@ -1,0 +1,507 @@
+@use "../../common.scss" as *;
+@use "layout" as *;
+
+body.shortread_10 {
+  background-color: $bg-color;
+
+  .hypomagnesemia {
+    margin: 40rem 0;
+
+    &__title {
+      @extend %block-title;
+      font-size: 40rem;
+      margin-bottom: 24rem;
+
+      @include mobile {
+        font-size: 24rem;
+        margin-bottom: 20rem;
+      }
+    }
+
+    &__subtitle {
+      color: $dark-blue;
+      font-weight: 400;
+      font-size: 32rem;
+      margin-bottom: 40rem;
+
+      @include mobile {
+        font-size: 22rem;
+      }
+    }
+
+    &__stats {
+      display: flex;
+      justify-content: space-between;
+      gap: 40rem;
+      margin-bottom: 40rem;
+
+      @include mobile {
+        flex-direction: column;
+        gap: 24rem;
+      }
+    }
+
+    &__card {
+      @extend %white-block;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 211rem;
+      width: 535rem;
+      position: relative;
+
+      @include mobile {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    &__card-img {
+      position: absolute;
+      top: 0;
+      right: 20rem;
+      height: 100%;
+      object-fit: contain;
+
+      @include mobile {
+        position: static;
+        height: auto;
+        width: 185rem;
+      }
+    }
+
+    &__card-text {
+      padding: 20rem;
+      max-width: 340rem;
+    }
+
+    &__highlight-title {
+      @extend %block-title;
+      font-size: 40rem;
+      margin-bottom: 24rem;
+
+      @include mobile {
+        font-size: 24rem;
+        margin-bottom: 12rem;
+      }
+    }
+
+    &__diagnosis {
+      margin-top: 40rem;
+    }
+
+    &__diagnosis-title {
+      @extend %block-title;
+      font-size: 40rem;
+      margin-bottom: 40rem;
+
+      @include mobile {
+        font-size: 30rem;
+      }
+    }
+
+    &__diagnosis-info {
+      display: flex;
+      justify-content: space-between;
+      gap: 40rem;
+      margin-bottom: 40rem;
+
+      @include mobile {
+        flex-direction: column;
+      }
+    }
+
+    &__diagnosis-info-left {
+      background-color: $dark-blue;
+      color: #fff;
+      padding: 20rem;
+      border-radius: 24rem;
+      height: 280rem;
+      width: 214rem;
+
+      @include mobile {
+        height: auto;
+        width: 100%;
+      }
+    }
+
+    &__diagnosis-unit {
+      margin-top: 24rem;
+      display: inline-block;
+      font-size: 40rem;
+      font-weight: 700;
+    }
+
+    &__diagnosis-info-right {
+      flex: 1;
+      text-align: center;
+      padding: 20rem;
+      @extend %white-block;
+    }
+
+    &__diagnosis-right-text {
+      margin-bottom: 24rem;
+
+      @include mobile {
+        margin-bottom: 20rem;
+      }
+    }
+
+    &__diagnosis-levels {
+      display: flex;
+      justify-content: space-between;
+      gap: 12rem;
+      color: #fff;
+
+      @include mobile {
+        flex-direction: column;
+      }
+    }
+
+    &__level {
+      width: 264rem;
+      height: 168rem;
+      background: linear-gradient(180deg, #abcef6 0%, #63a0e8 100%);
+      display: flex;
+      flex-direction: column;
+      gap: 12rem;
+      padding: 20rem;
+      border-radius: 24rem;
+
+      @include mobile {
+        width: 100%;
+      }
+    }
+
+    &__level-label {
+      font-weight: 700;
+    }
+
+    &__level-number {
+      font-size: 40rem;
+      font-weight: 700;
+    }
+
+    &__diagnosis-blue-img {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 265rem;
+      object-fit: contain;
+
+      @include mobile {
+        position: static;
+      }
+    }
+
+    &__diagnosis-blue {
+      position: relative;
+      background-color: $dark-blue;
+      padding: 20rem 20rem 20rem 276rem;
+      display: flex;
+      align-items: center;
+      color: #fff;
+      border-radius: 24rem;
+      height: 210rem;
+      font-weight: 700;
+
+      @include mobile {
+        padding: 0;
+        height: auto;
+        flex-direction: column-reverse;
+      }
+    }
+
+    &__diagnosis-blue-text {
+      @include mobile {
+        padding: 20rem;
+      }
+    }
+
+    &__diagnosis-plasma {
+      margin: 40rem 0;
+      display: flex;
+      justify-content: space-between;
+
+      @include mobile {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+
+    &__diagnosis-plasma-inner {
+      flex: 1;
+      padding-top: 25rem;
+      max-width: 788rem;
+
+      @include mobile {
+        padding-top: 0;
+      }
+    }
+
+    &__diagnosis-plasma-text {
+      margin-bottom: 24rem;
+
+      @include mobile {
+        margin-bottom: 12rem;
+      }
+    }
+
+    &__diagnosis-plasma-img {
+      width: 282rem;
+      height: 194rem;
+      object-fit: contain;
+
+      @include mobile {
+        margin-top: 24rem;
+      }
+    }
+
+    &__diagnosis-white-img {
+      position: absolute;
+      bottom: 0;
+      left: -40rem;
+      width: 286rem;
+      object-fit: contain;
+
+      @include mobile {
+        position: static;
+      }
+    }
+
+    &__diagnosis-white {
+      position: relative;
+      @extend %white-block;
+      padding: 20rem 20rem 20rem 270rem;
+      border-radius: 24rem;
+      height: 210rem;
+      font-size: 24rem;
+      display: flex;
+      align-items: center;
+
+      @include mobile {
+        padding: 0;
+        height: auto;
+        flex-direction: column-reverse;
+      }
+    }
+
+    &__diagnosis-white-inner {
+      @include mobile {
+        padding: 20rem;
+      }
+    }
+
+    &__diagnosis-white-text {
+      margin-bottom: 12rem;
+    }
+
+    &__diagnosis-text {
+      color: $dark-blue;
+    }
+
+    &__diagnosis-paragraph {
+      margin: 40rem 0;
+    }
+
+    &__diagnosis-excretion {
+      margin-top: 80rem;
+      display: flex;
+      @extend %white-block;
+      padding: 20rem 40rem;
+      display: flex;
+      align-items: center;
+      gap: 24rem;
+
+      @include mobile {
+        flex-direction: column;
+        padding: 20rem;
+      }
+    }
+
+    &__diagnosis-excretion-big {
+      @extend %block-title;
+      font-size: 40rem;
+
+      @include mobile {
+        font-size: 30rem;
+      }
+    }
+  }
+
+  .antagonist {
+    margin-top: 80rem;
+
+    &__title {
+      @extend %block-title;
+      font-size: 40rem;
+      margin-bottom: 24rem;
+
+      @include mobile {
+        font-size: 30rem;
+      }
+    }
+
+    &__blue {
+      @extend %blue-block;
+      margin: 40rem 0;
+      padding: 20rem;
+      display: flex;
+      align-items: center;
+      gap: 24rem;
+
+      @include mobile {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+
+    &__unit {
+      font-size: 40rem;
+      font-weight: 700;
+    }
+
+    &__blue-inner {
+      flex: 1;
+      font-weight: 700;
+    }
+
+    &__blue-text {
+      font-size: 24rem;
+      font-weight: 700;
+
+      @include mobile {
+        font-size: 20rem;
+      }
+    }
+
+    &__methods {
+      display: flex;
+      justify-content: space-between;
+      gap: 40rem;
+
+      @include mobile {
+        flex-direction: column;
+      }
+    }
+
+    &__left-block {
+      flex: 1;
+    }
+
+    &__left-block-text {
+      margin-bottom: 12rem;
+    }
+
+    &__right-block {
+      max-width: 535rem;
+    }
+
+    &__right-block-title {
+      @extend %block-title;
+      font-size: 40rem;
+      margin-bottom: 24rem;
+
+      @include mobile {
+        font-size: 30rem;
+        margin-bottom: 22rem;
+      }
+    }
+
+    &__right-block-img {
+      img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+        border-radius: 24rem;
+      }
+    }
+
+    &__wisdom-list {
+      display: flex;
+      justify-content: space-between;
+      gap: 40rem;
+      margin-bottom: 40rem;
+
+      @include mobile {
+        flex-direction: column;
+        gap: 12rem;
+      }
+    }
+
+    &__wisdom-item {
+      width: 255rem;
+      background: linear-gradient(180deg, #abcef6 0%, #63a0e8 100%);
+      border-radius: 24rem;
+      padding: 20rem;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 343rem;
+      height: 84rem;
+
+      @include mobile {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    &__wisdom-item-text {
+      font-size: 24rem;
+    }
+
+    &__white {
+      @extend %white-block;
+      padding: 40rem;
+      margin: 40rem 0 80rem 0;
+      position: relative;
+
+      @include mobile {
+        padding: 0;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 12rem;
+      }
+    }
+
+    &__white-inner {
+      flex: 1;
+      max-width: 655rem;
+
+      @include mobile {
+        padding: 24rem 20rem 0 20rem;
+      }
+    }
+
+    &__white-title {
+      @extend %block-title;
+      font-size: 40rem;
+      margin-bottom: 20rem;
+
+      @include mobile {
+        font-size: 30rem;
+        margin-bottom: 12rem;
+      }
+    }
+
+    &__white-img {
+      position: absolute;
+      bottom: 0;
+      right: 150rem;
+      width: 176rem;
+
+      img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+      }
+
+      @include mobile {
+        position: static;
+      }
+    }
+  }
+}
