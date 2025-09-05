@@ -11,12 +11,21 @@ body.shortread_9 {
       @extend %block-title;
       font-size: 40rem;
       margin-bottom: 24rem;
+
+      @include mobile {
+        font-size: 30rem;
+        margin-bottom: 12rem;
+      }
     }
 
     &__subtitle {
       @extend %block-title;
       font-size: 24rem;
       margin-bottom: 24rem;
+
+      @include mobile {
+        margin-bottom: 12rem;
+      }
     }
 
     &__discriptions {
@@ -30,6 +39,12 @@ body.shortread_9 {
       height: 208rem;
       margin: 40rem 0;
       @extend %white-block;
+
+      @include mobile {
+        flex-direction: column;
+        height: auto;
+        margin: 24rem 0;
+      }
     }
 
     &__banner-left {
@@ -41,6 +56,10 @@ body.shortread_9 {
     &__banner-text {
       @extend %block-title;
       font-size: 40rem;
+
+      @include mobile {
+        font-size: 24rem;
+      }
     }
 
     &__banner-right {
@@ -49,6 +68,10 @@ body.shortread_9 {
         max-width: 100%;
         max-height: 100%;
         object-fit: contain;
+      }
+
+      @include mobile {
+        display: none;
       }
     }
 
@@ -59,6 +82,10 @@ body.shortread_9 {
       padding: 20rem;
       margin: 40rem 0;
       font-weight: 700;
+
+      @include mobile {
+        margin: 24rem 0;
+      }
     }
 
     &__statistics {
@@ -68,6 +95,11 @@ body.shortread_9 {
       height: 211rem;
       margin: 40rem 0;
       gap: 40rem;
+
+      @include mobile {
+        flex-direction: column;
+        height: auto;
+      }
     }
 
     &__statistics-left {
@@ -82,6 +114,10 @@ body.shortread_9 {
         max-width: 100%;
         max-height: 100%;
         object-fit: contain;
+      }
+
+      @include mobile {
+        max-width: 100%;
       }
     }
 
@@ -103,29 +139,48 @@ body.shortread_9 {
 
     &__daily-need {
       margin-top: 40rem;
-      background-color: $dark-blue;
+      position: relative;
       color: #fff;
-      border-radius: 24rem;
       height: 144rem;
+
+      @include mobile {
+        margin-top: 24rem;
+        height: auto;
+      }
     }
 
     &__daily-need-content {
-      position: relative;
-      display: flex;
+      background-color: $dark-blue;
+      border-radius: 26rem;
       padding: 20rem 0 20rem 100rem;
 
       img {
         position: absolute;
         left: -65rem;
-        top: 0;
-        width: 173rem;
-        height: 140rem;
+        top: 30rem;
+        width: 126rem;
+        height: 87rem;
         object-fit: contain;
+      }
+
+      @include mobile {
+        padding: 20rem;
+        margin-bottom: 12rem;
+
+        img {
+          top: 80rem;
+          left: 200rem;
+          width: 100rem;
+        }
       }
     }
 
     &__daily-need-text {
       max-width: 450rem;
+
+      @include mobile {
+        max-width: 280rem;
+      }
     }
 
     &__daily-need-title {
@@ -147,29 +202,53 @@ body.shortread_9 {
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 146rem;
+      height: 148rem;
       width: 483rem;
       padding: 20rem;
+
+      @include mobile {
+        position: static;
+        width: 100%;
+        padding: 20rem;
+      }
     }
   }
 
   .criteria {
     margin: 40rem 0;
 
+    @include mobile {
+      margin: 24rem 0;
+    }
+
     &__title {
       @extend %block-title;
       font-size: 40rem;
       margin-bottom: 24rem;
+
+      @include mobile {
+        font-size: 24rem;
+        margin-bottom: 12rem;
+      }
     }
 
     &__description {
       margin-bottom: 40rem;
+
+      @include mobile {
+        margin-bottom: 24rem;
+      }
     }
 
     &__subtitle {
       @extend %block-title;
       font-size: 40rem;
       margin-bottom: 40rem;
+
+      @include mobile {
+        font-size: 30rem;
+        margin-bottom: 24rem;
+      }
     }
 
     &__list {
@@ -177,6 +256,11 @@ body.shortread_9 {
       flex-direction: column;
       gap: 40rem;
       margin-bottom: 40rem;
+
+      @include mobile {
+        gap: 24rem;
+        margin-bottom: 24rem;
+      }
     }
 
     &__item {
@@ -184,6 +268,12 @@ body.shortread_9 {
       padding: 20rem 20rem 20rem 200rem;
       @extend %white-block;
       position: relative;
+
+      @include mobile {
+        
+        flex-direction: column;
+        padding: 20rem 20rem 240rem 20rem;
+      }
     }
 
     &__item-icon {
@@ -194,17 +284,34 @@ body.shortread_9 {
       display: flex;
       align-items: center;
       justify-content: center;
+
       img {
         width: 100%;
         height: 100%;
         object-fit: contain;
       }
+
+      @include mobile {
+        width: 300rem;
+        left: 50%;
+        transform: translateX(-50%);
+      }
     }
 
     &__list {
       .criteria__item:nth-of-type(1) {
+
+        @include mobile {
+          padding: 20rem 20rem 160rem 20rem;
+        }
+
         .criteria__item-icon {
           bottom: -25rem;
+
+          @include mobile {
+            left: 150rem;
+            bottom: -36rem;
+          }
         }
       }
     }
@@ -213,9 +320,16 @@ body.shortread_9 {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      max-height: 327rem;
+      height: 327rem;
       margin: 40rem 0;
       @extend %white-block;
+      overflow: hidden;
+
+      @include mobile {
+        flex-direction: column;
+        height: auto;
+        margin: 24rem 0;
+      }
     }
 
     &__banner-left {
@@ -226,6 +340,10 @@ body.shortread_9 {
     &__banner-text {
       @extend %block-title;
       font-size: 40rem;
+
+      @include mobile {
+        font-size: 20rem;
+      }
     }
 
     &__banner-right {
@@ -234,6 +352,13 @@ body.shortread_9 {
         max-width: 100%;
         max-height: 100%;
         object-fit: contain;
+      }
+
+      @include mobile {
+        position: relative;
+        bottom: -10rem;
+        max-width: 253rem;
+        margin-left: auto;
       }
     }
 
@@ -244,6 +369,11 @@ body.shortread_9 {
       height: 211rem;
       margin: 40rem 0;
       gap: 40rem;
+
+      @include mobile {
+        flex-direction: column;
+        height: auto;
+      }
     }
 
     &__statistics-left {
@@ -253,6 +383,10 @@ body.shortread_9 {
       justify-content: center;
       border-radius: 24rem;
       background: linear-gradient(180deg, #abcef6 0%, #63a0e8 100%);
+
+      @include mobile {
+        max-width: 100%;
+      }
 
       img {
         max-width: 100%;
@@ -271,6 +405,10 @@ body.shortread_9 {
       @extend %block-title;
       font-size: 24rem;
       margin-bottom: 12rem;
+
+      @include mobile {
+        font-size: 20rem;
+      }
     }
   }
 }

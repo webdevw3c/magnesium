@@ -10,6 +10,10 @@ body.shortread_8 {
       @extend %block-title;
       font-size: 40rem;
       margin-bottom: 24rem;
+
+      @include mobile {
+        font-size: 30rem;
+      }
     }
   }
 
@@ -18,14 +22,23 @@ body.shortread_8 {
     align-items: center;
     justify-content: flex-start;
     gap: 20rem;
-    padding: 0 20rem;
     height: 334rem;
     @extend %white-block;
+
+    @include mobile {
+      flex-direction: column;
+      height: auto;
+      gap: 2rem;
+    }
 
     &__left-content {
       flex: 1;
       max-width: 720rem;
-      padding: 36rem 0;
+      padding: 20rem;
+
+      @include mobile {
+        padding-bottom: 0;
+      }
     }
 
     &__title {
@@ -53,18 +66,19 @@ body.shortread_8 {
     }
 
     &__right-content {
-      height: 100%;
-      overflow: hidden;
       display: flex;
       align-items: center;
       justify-content: center;
-      flex-shrink: 0; // Предотвращаем сжатие контейнера
 
       img {
-        height: auto;
-        max-height: 100%;
-        max-width: 100%;
+        width: 210rem;
         object-fit: contain;
+      }
+
+      @include mobile {
+        img {
+          width: 185rem;
+        }
       }
     }
   }
@@ -76,12 +90,16 @@ body.shortread_8 {
       justify-content: space-between;
       gap: 40rem;
       margin: 40rem 0;
+
+      @include mobile {
+        flex-direction: column;
+        gap: 12rem;
+      }
     }
 
     &__left-content {
       padding: 20rem;
-      width: 627rem;
-      height: 451rem;
+      max-width: 627rem;
       @extend %white-block;
     }
 
@@ -90,17 +108,24 @@ body.shortread_8 {
       font-weight: 700;
       color: $dark-blue;
       margin-bottom: 24rem;
+
+      @include mobile {
+        margin-bottom: 12rem;
+      }
     }
 
     &__list {
       display: flex;
       gap: 24rem;
       flex-wrap: wrap;
+
+      @include mobile {
+        gap: 12rem;
+      }
     }
 
     &__item {
       width: 200rem;
-      height: 140rem;
       display: flex;
       gap: 12rem;
       flex-direction: column;
@@ -109,19 +134,21 @@ body.shortread_8 {
         width: 45rem;
         height: 45rem;
       }
+
+      @include mobile {
+        width: 100%;
+      }
     }
 
     &__right-content {
       background: linear-gradient(180deg, #abcef6 0%, #63a0e8 100%);
-      width: 443rem;
-      height: 451rem;
+      max-width: 443rem;
       color: #fff;
       padding: 20rem;
       border-radius: 24rem;
 
       img {
         max-width: 100%;
-        max-height: 100%;
         object-fit: contain;
       }
     }
@@ -129,11 +156,20 @@ body.shortread_8 {
     &__right-text {
       font-size: 24rem;
       font-weight: 700;
+      margin-bottom: 12rem;
+
+      @include mobile {
+        font-size: 20rem;
+      }
     }
 
     &__right-text-big {
       font-size: 40rem;
       font-weight: 700;
+
+      @include mobile {
+        font-size: 30rem;
+      }
     }
 
     &__text {
@@ -144,11 +180,44 @@ body.shortread_8 {
   .advice {
     margin: 40rem 0;
 
-    img {
-      max-width: 100%;
-      max-height: 100%;
-      object-fit: contain;
-      border-radius: 24rem;
+    &__image-container {
+      width: 100%;
+
+      img {
+        width: 100%;
+        object-fit: contain;
+        border-radius: 24rem;
+      }
+
+      @include mobile {
+        overflow-x: scroll;
+        padding-bottom: 24rem;
+
+        &::-webkit-scrollbar {
+          display: block;
+          height: 8rem;
+          -webkit-appearance: none;
+          border-radius: 6rem;
+        }
+
+        &::-webkit-scrollbar-track {
+          background: #fff;
+          border-radius: 6rem;
+        }
+
+        &::-webkit-scrollbar-thumb {
+          background: $dark-blue;
+          border-radius: 6rem;
+          border: none;
+          width: 80rem;
+          -webkit-box-shadow: none;
+        }
+
+        img {
+          width: 550rem;
+          min-width: 100%;
+        }
+      }
     }
 
     &__blue {
@@ -167,12 +236,22 @@ body.shortread_8 {
       height: 362rem;
       @extend %white-block;
       margin: 40rem 0;
+
+      @include mobile {
+        flex-direction: column;
+        gap: 2rem;
+        height: auto;
+      }
     }
 
     &__left-content {
-      width: 637rem;
+      flex: 1;
       padding: 20rem;
       align-content: center;
+
+      @include mobile {
+        padding: 20rem 20rem 0 20rem;
+      }
     }
 
     &__title {
@@ -180,10 +259,13 @@ body.shortread_8 {
       font-weight: 700;
       color: $dark-blue;
       margin-bottom: 12rem;
+
+      @include mobile {
+        font-size: 24rem;
+      }
     }
 
     &__bold {
-      font-size: 20rem;
       font-weight: 700;
       margin-bottom: 12rem;
     }
@@ -206,14 +288,50 @@ body.shortread_8 {
       @extend %block-title;
       font-size: 40rem;
       margin-bottom: 24rem;
+
+      @include mobile {
+        font-size: 30rem;
+      }
     }
 
     &__content {
+      width: 100%;
       margin-bottom: 40rem;
+
       img {
-        max-width: 100%;
-        max-height: 100%;
+        width: 100%;
         object-fit: contain;
+        border-radius: 24rem;
+      }
+      
+      @include mobile {
+        overflow-x: scroll;
+        padding-bottom: 24rem;
+
+        &::-webkit-scrollbar {
+          display: block;
+          height: 8rem;
+          -webkit-appearance: none;
+          border-radius: 6rem;
+        }
+
+        &::-webkit-scrollbar-track {
+          background: #fff;
+          border-radius: 6rem;
+        }
+
+        &::-webkit-scrollbar-thumb {
+          background: $dark-blue;
+          border-radius: 6rem;
+          border: none;
+          width: 80rem;
+          -webkit-box-shadow: none;
+        }
+
+        img {
+          width: 600rem;
+          min-width: 100%;
+        }
       }
     }
 
